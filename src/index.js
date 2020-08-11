@@ -1,11 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App/App';
-import AppProvider from './providers/AppProvider';
 
 render(
-  <AppProvider>
-     <App />
-  </AppProvider>,
+  <App />,
   document.getElementById('root')
 );
