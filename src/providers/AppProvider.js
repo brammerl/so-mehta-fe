@@ -1,8 +1,8 @@
 import React, { useReducer, useEffect } from 'react';
-import { AppContext } from '../hooks/appContext';
+import { AppContext } from '../hooks/AppContext';
 import reducer, { initialState } from '../reducers/reducer';
-import fetchArtwork from '../services/fetchArtwork';
-import setArtwork from '../actions/reducerActions';
+import { fetchArtwork } from '../services/artwork';
+import { setArtwork }from '../actions/reducerActions';
 
 
 const AppProvider = ({ children }) => {
@@ -14,9 +14,9 @@ const AppProvider = ({ children }) => {
   }, []);
   
   return (
-    <Context.Provider value={{ state, dispatch}}>
+    <AppContext.Provider value={{ state, dispatch }}>
       {children}
-    </Context.Provider>
+    </AppContext.Provider>
     )
 }
 

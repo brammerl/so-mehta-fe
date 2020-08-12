@@ -1,1 +1,1 @@
-export const getArtwork = sate => state.artwork;
+export const getArtwork = state => state.artwork;

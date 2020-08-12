@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from '../../hooks/appContext';
+import { useDispatch, useSelector } from '../../hooks/AppContext';
 
 
 const SearchBar = () => {

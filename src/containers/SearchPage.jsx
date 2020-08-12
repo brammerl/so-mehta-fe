@@ -6,8 +6,10 @@ const SearchPage = () => {
   return(
     <>
       <SearchBar />
-      <RepoDisplay />
+      <ArtResults />
     </>
 
   )
 }
+
+export default SearchPage;
